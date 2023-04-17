@@ -1,0 +1,66 @@
+/* min width 992 */
+/* max width 1680 */
+
+:root {
+    --section-side-margin: 20px;
+    --content-side-margin: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Container handles centering of content. */
+.center-container {
+    background-color: blueviolet;
+    margin: auto;
+    width:auto;
+    max-width: 1660px;
+    
+}
+
+/* Wrapper handles the margining of content */
+.center-wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.center-left {
+    margin-left: var(--section-side-margin);
+}
+
+.center-right {
+    margin-right: var(--section-side-margin);
+}
+
+.site-banner {
+    background-color: #3f64dd;
+    padding-right: var(--section-side-margin);
+}
+
+.site-header-top {
+    background-color: aqua;
+}
+
+.secondary-nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.site-header-bottom {
+
+}
+
+.primary-nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+}
