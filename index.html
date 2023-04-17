@@ -1,62 +1,199 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Galvanize Clone</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header class="site-banner" role="banner">
+        <header class="bg-blue section-padding-right" role="banner">
+            <!-- Secondary navigation -->
             <div class="site-header-top">
                 <div class="center-container">
-                    <nav class="center-left" aria-label="Secondary Navigation">
-                        <div class="center-wrapper">
-                            <ul class="secondary-nav-items">
-                                <li>About</li>
-                                <li>Alumni</li>
-                                <li>Events</li>
-                                <li>Logins</li>
-                            </ul>
-                        </div>
+                    <nav class="center-wrapper-left" aria-label="Secondary Navigation">
+                        <ul class="secondary-nav-items font-inter">
+                            <li>About</li>
+                            <li>Alumni</li>
+                            <li>Events</li>
+                            <li>Logins</li>
+                        </ul>
                     </nav>
                 </div>
             </div>
-            <div class="site-header-bottom">
+
+            <!-- Primary navigation -->
+            <div class="site-header-bottom bg-navy-blue top-rounded-right">
                 <div class="center-container">
-                    <nav class="center-left" aria-label="Primary Navigation">
-                        <div class="center-wrapper">
-                            <ul class="primary-nav-items">
-                                <li>Hack Reactor Bootcamps</li>
-                                <li>For Military</li>
-                                <li>For Companies</li>
-                            </ul>
-                        </div>
+                    <nav class="center-wrapper-left" aria-label="Primary Navigation">
+                        <ul class="primary-nav-items font-color-white">
+                            <li class="font-poppins">Hack Reactor Bootcamps</li>
+                            <li class="font-poppins">For Military</li>
+                            <li class="font-poppins">For Companies</li>
+                        </ul>
                     </nav>
                 </div>
             </div>
         </header>
+
         <main>
-            <section aria-label="About"></section>
-            <section aria-label="Careers"></section>
-            <section aria-label="Partners"></section>
-            <section aria-label="Explore"></section>
-            <section aria-label="Reviews"></section>
-            <section aria-label="Community"></section>
-            <section aria-label="Feedback"></section>
-            <section aria-label="Build"></section>
-            <section aria-label="Invest"></section>
-            <section aria-label="Alumnis"></section>
-            <section aria-label="Free Session"></section>
-            <section aria-label="Apply"></section>
+            <!-- About -->
+            <section class="bg-blue section-padding-right" aria-label="About">
+                <div class="bg-navy-blue">
+                    <div class="center-container">
+                        <div class="center-wrapper-left">
+                            <div id="site-content-about">
+                                <div class="font-color-white">
+                                    <p>HACK REACTOR BY GALVANIZE</p>
+                                    <h1 class="font-poppins">Coding Bootcamps for Aspiring Software Engineers</h1>
+                                    <p>Learn and grow in a supportive online coding community dedicated to building tomorrow.</p>
+                                    <button>Wow</button>
+                                </div>
+                                <div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Careers -->
+            <div class="bg-light-blue"><div class="bottom-transition-right bg-navy-blue"></div></div>
+            <section class="bg-navy-blue section-padding-left" aria-label="Careers">
+                <div class="bg-light-blue top-rounded-left">
+                    <div class="center-container">
+                        <div class="center-wrapper-right">
+                            Careers placeholder
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Partners -->
+            <section class="bg-navy-blue section-padding-left" aria-label="Partners">
+                <div class="bg-light-blue">
+                    <div class="center-container">
+                        <div class="center-wrapper-right">
+                            Partners placeholder
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Explore -->
+            <div class="bg-white"><div class="bottom-transition-left bg-light-blue"></div></div>
+            <section class="bg-light-blue section-padding-right" aria-label="Explore">
+                <div class="bg-white top-rounded-right">
+                    <div class="center-container">
+                        <div class="center-wrapper-left">
+                            Explore placeholder
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reviews -->
+            <section class="bg-light-blue section-padding-right" aria-label="Reviews">
+                <div class="bg-white">
+                    <div class="center-container">
+                        <div class="center-wrapper-left">
+                            Reviews placeholder
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Community -->
+            <div class="bg-navy-blue"><div class="bottom-transition-right bg-white"></div></div>
+            <section class="bg-white section-padding-left" aria-label="Community">
+                <div class="bg-navy-blue top-rounded-left">
+                    <div class="center-container">
+                        <div class="center-wrapper-right">
+                            Community placeholder
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Feedback -->
+            <section class="bg-white section-padding-left" aria-label="Feedback">
+                <div class="bg-navy-blue">
+                    <div class="center-container">
+                        <div class="center-wrapper-right">
+                            Feedback placeholder
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Build -->
+            <div class="bg-light-blue"><div class="bottom-transition-left bg-navy-blue"></div></div>
+            <section class="bg-navy-blue section-padding-right" aria-label="Build">
+                <div class="bg-light-blue top-rounded-right">
+                    <div class="center-container">
+                        <div class="center-wrapper-left">
+                            Build placeholder
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Invest -->
+            <section class="bg-navy-blue section-padding-right" aria-label="Invest">
+                <div class="bg-light-blue">
+                    <div class="center-container">
+                        <div class="center-wrapper-left">
+                            Invest placeholder
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Alumnis -->
+            <section class="bg-navy-blue section-padding-right" aria-label="Alumnis">
+                <div class="bg-light-blue">
+                    <div class="center-container">
+                        <div class="center-wrapper-left">
+                            Alumnis placeholder
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Session -->
+            <div class="bg-white"><div class="bottom-transition-right bg-light-blue"></div></div>
+            <section class="bg-light-blue section-padding-left" aria-label="Session">
+                <div class="bg-white top-rounded-left">
+                    <div class="center-container">
+                        <div class="center-wrapper-right">
+                            Session placeholder
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Apply -->
+            <div class="bg-navy-blue"><div class="bottom-transition-left bg-white"></div></div>
+            <section class="bg-white section-padding-right"  aria-label="Apply">
+                <div class="bg-navy-blue top-rounded-right">
+                    <div class="center-container">
+                        <div class="center-wrapper-left">
+                            Apply placeholder
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="bg-white"><div class="bottom-transition-right bg-navy-blue"></div></div>
         </main>
+
         <footer>
 
         </footer>
