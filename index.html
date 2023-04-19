@@ -7,38 +7,42 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/1f73e36f7c.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="nui_lib.css">
     </head>
     <body>
         <header class="bg-blue section-padding-right" role="banner">
             <!-- Secondary navigation -->
-            <div class="site-header-top">
+            <div id="site-header-top">
                 <div class="center-container">
-                    <nav class="center-wrapper-left" aria-label="Secondary Navigation">
-                        <ul class="secondary-nav-items font-inter">
-                            <li>About</li>
-                            <li>Alumni</li>
-                            <li>Events</li>
-                            <li>Logins</li>
-                        </ul>
+                    <nav id="secondary-navigation" class="center-wrapper-left hide-on-tablet font-inter font-color-white font-700 display-flex flex-content-nowrap flex-end backlight-wrapper" aria-label="Secondary Navigation">
+                        <a>ABOUT</a>
+                        <a>ALUMNI</a>
+                        <a>EVENTS</a>
+                        <a>LOGINS</a>
                     </nav>
                 </div>
             </div>
 
             <!-- Primary navigation -->
-            <div class="site-header-bottom bg-navy-blue top-rounded-right">
+            <div id="site-header-bottom" class="bg-navy-blue top-rounded-right">
                 <div class="center-container">
-                    <nav class="center-wrapper-left" aria-label="Primary Navigation">
-                        <ul class="primary-nav-items font-color-white">
-                            <li class="font-poppins">Hack Reactor Bootcamps</li>
-                            <li class="font-poppins">For Military</li>
-                            <li class="font-poppins">For Companies</li>
-                        </ul>
-                    </nav>
+                    <div class="center-wrapper-left display-flex flex-center-vertical">
+                        <img id="header-logo" src="src\assets\galvanize_logo_small-scale_full-color_dark-background.png"/>
+                        <nav id="primary-navigation" class="hide-on-tablet fill-width underslide-wrapper font-color-white font-poppins display-flex flex-content-nowrap flex-end" aria-label="Primary Navigation">
+                            <a class="underslide-selected" href="https://www.galvanize.com/hack-reactor/">Hack Reactor Bootcamps</a>
+                            <a href="https://www.galvanize.com/military/">For Military</a>
+                            <a href="https://www.galvanize.com/corporate-training/">For Companies</a>
+                        </nav>
+                        <div class="hide-on-desktop text-end fill-width" style="min-width:50px;">
+                            =
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -46,18 +50,23 @@
         <main>
             <!-- About -->
             <section class="bg-blue section-padding-right" aria-label="About">
-                <div class="bg-navy-blue">
+                <div id="about-container" class="bg-navy-blue">
                     <div class="center-container">
                         <div class="center-wrapper-left">
-                            <div id="site-content-about">
-                                <div class="font-color-white">
-                                    <p>HACK REACTOR BY GALVANIZE</p>
-                                    <h1 class="font-poppins">Coding Bootcamps for Aspiring Software Engineers</h1>
-                                    <p>Learn and grow in a supportive online coding community dedicated to building tomorrow.</p>
-                                    <button>Wow</button>
+                            <div class="content font-color-white display-flex flex-center-vertical">
+                                <div class="flex-nobasis flex-grow-1">
+                                    <p class="pre-title">HACK REACTOR BY GALVANIZE</p>
+                                    <h1>Coding Bootcamps for Aspiring Software Engineers</h1>
+                                    <p class="intro-text">Learn and grow in a supportive online coding community dedicated to building tomorrow.</p>
+                                    <a class="btn-primary" href="https://admissions.galvanize.com/?_ga=2.36187040.1424400670.1681500274-1662624598.1681500274" target="_blank">
+                                        Apply Now <i class="fa-solid fa-external-link-alt fa-xs" style="color: #ffffff;"></i>
+                                    </a>
                                 </div>
-                                <div>
-                                    
+                                <div id="primary-inquiry-container" class="flex-nobasis flex-grow-2 display-flex flex-end flex-center-vertical">
+                                    <img id="primary-inquiry-model" class="flex-nobasis flex-grow-1" style="" src="src\assets\750x750-smilingManHeadshotGlassesPinkShirt.jpg" />
+                                    <form id="primary-inquiry-form" class="flex-nobasis flex-grow-1">
+                                        asdssssssssssssssssssss
+                                    </form>
                                 </div>
                             </div>
                         </div>
