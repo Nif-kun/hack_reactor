@@ -62,17 +62,52 @@
                                         Apply Now <i class="fa-solid fa-external-link-alt fa-xs" style="color: #ffffff;"></i>
                                     </a>
                                 </div>
-                                <div id="primary-inquiry-container" class="flex-nobasis flex-grow-5 display-flex flex-center-vertical">
-                                    <div class="relative flex-nobasis flex-grow-1">
+                                <div id="primary-inquiry-container" class="display-flex flex-center-vertical">
+                                    <div class="relative flex-nobasis" style="flex-grow: 1.35;">
                                         <div class="display-flex flex-center-vertical">
                                             <img id="primary-inquiry-model"  src="src\assets\750x750-smilingManHeadshotGlassesPinkShirt.jpg" />
                                         </div>
                                         <div class="absolute fill-width display-flex" style="bottom: 15px; left: 15px;">
+                                            <div id="primary-inquiry-model-mask"></div>
                                             <img id="primary-inquiry-model-logo" src="src\assets\hack-reactor_logo_full-color_dark-background.png" />
                                         </div>
                                     </div>
-                                    <div class="flex-nobasis flex-grow-1" style="z-index: 1;">
+                                    <div class="flex-nobasis flex-grow-1" style="flex-grow: 1; z-index: 1;">
                                         <form id="primary-inquiry-form">
+                                            <div class="form-input-container">
+                                                <input placeholder=" " class="primary-input" type="text">
+                                                <label>First Name *</label>
+                                            </div>
+                                            <div class="form-input-container">
+                                                <input placeholder=" " class="primary-input" type="text">
+                                                <label>Last Name *</label>
+                                            </div>
+                                            <div class="form-input-container">
+                                                <input placeholder=" " class="primary-input" type="text">
+                                                <label>Email *</label>
+                                            </div>
+                                            <div class="form-input-container">
+                                                <input class="primary-input" type="text">
+                                                <label>Phone</label>
+                                            </div>
+                                            <div class="form-select-container">
+                                                <select class="primary-select">
+                                                    <option disabled selected value="">Please select...</option>
+                                                    <option value="option1">Full-time beginner</option>
+                                                    <option value="option2">Full-time intermediate</option>
+                                                    <option value="option3">I'm not sure</option>
+                                                </select>
+                                                <label>What program interests you? *</label>
+                                            </div>
+                                            <label id="terms-and-service" class="underslide-out-wrapper display-flex">
+                                                <input type="checkbox"> 
+                                                <div class="font-color-dark-gray">
+                                                    I agree to Galvanize’s <a href="https://www.galvanize.com/privacy/" class="font-700 font-color-navy-blue">Privacy Policy</a> and <a class="font-700 font-color-navy-blue" href="https://www.galvanize.com/terms-of-use">Terms of Service</a>.
+                                                </div> 
+                                            </label>
+                                            <a class="btn-primary absolute" href="https://admissions.galvanize.com/?_ga=2.36187040.1424400670.1681500274-1662624598.1681500274" target="_blank">
+                                                Send me more information
+                                            </a>
                                         </form>
                                     </div>
                                 </div>

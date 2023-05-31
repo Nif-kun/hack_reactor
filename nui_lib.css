@@ -3,6 +3,7 @@
 	--blue: #3f64dd;
 	--navy-blue: #0d0f4a;
 	--light-blue: #e0eaf8;
+	--dark-gray: rgb(74, 74, 74);
 
 	/* Measurements */
 	--tablet-width: 1023px;
@@ -109,11 +110,15 @@
 
 /* Font Color */
 .font-color-white {
-	color: white;
+	color: white !important;
 }
 
 .font-color-navy-blue {
-	color: var(--navy-blue);
+	color: var(--navy-blue) !important;
+}
+
+.font-color-dark-gray {
+	color: var(--dark-gray) !important;
 }
 
 /* Sizing */

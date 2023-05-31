@@ -17,6 +17,7 @@
 	--navy-blue: #0d0f4a;
 	--light-blue: #e0eaf8;
 	--gray-blue: #a9b8c3;
+	--gray-light: #f7f7f7;
 	--orange: #ef6e47;
 	--dark-orange: #e84210;
 
@@ -187,6 +188,24 @@ h3 {
 	background: none !important;
 }
 
+.underslide-out-wrapper a {
+	background: linear-gradient(to right, transparent 50%, var(--blue) 50%);
+	background-repeat: no-repeat;
+	background-size: 200% 1px;
+	background-position: right bottom;
+	padding-bottom: 2px;
+	color: inherit;
+	font-family: inherit;
+	text-decoration: none;
+	cursor: pointer;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+}
+
+.underslide-out-wrapper a:hover {
+	background-position: left bottom;
+}
+
 .backlight-wrapper a {
 	transition-duration: 0.3s;
 	transition-timing-function: ease-out;
@@ -196,6 +215,105 @@ h3 {
 	background-color: rgba(255, 255, 255, 0.8);
 	color: var(--navy-blue);
 }
+
+.form-input-container {
+	height: 60px;
+	padding: 2px;
+	background: linear-gradient(to left top, transparent 20%, #0000001f 80%);
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.form-input-container > label {
+	padding-top: 17px;
+	position: absolute;
+	left: 20px;
+	align-items: center;
+	pointer-events: none;
+	font-size: 17px;
+	letter-spacing: -0.5px;
+	color: var(--navy-blue);
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+}
+
+.primary-input {
+	width: 100%;
+	height: 60px;
+	background-color: var(--gray-light);
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	box-sizing: border-box;
+	border: transparent;
+	font-size: 17px;
+	letter-spacing: -0.5px;
+	color: var(--navy-blue);
+}
+
+.primary-input:focus ~ label {
+	padding-top: 0px;
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: -0.25px;
+	color: grey;
+}
+
+.primary-input:not(:placeholder-shown) ~ label {
+	padding-top: 0px;
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: -0.25px;
+	color: grey;
+}
+
+.form-select-container {
+	height: 60px;
+	padding: 2px;
+	background: var(--gray-light);
+	box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.215);
+	border-radius: 8px;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.form-select-container > label {
+	padding-top: 17px;
+	position: absolute;
+	left: 20px;
+	align-items: center;
+	pointer-events: none;
+	font-size: 17px;
+	letter-spacing: -0.5px;
+	color: var(--navy-blue);
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+}
+
+.primary-select {
+	width: 100%;
+	height: 60px;
+	background-color: transparent;
+	padding-left: 14px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	box-sizing: border-box;
+	border: transparent;
+	font-size: 17px;
+	letter-spacing: -0.5px;
+	color: var(--navy-blue);
+}
+
+.primary-select:not(:placeholder-shown) ~ label {
+	padding-top: 0px;
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: -0.25px;
+	color: grey;
+}
+
 
 /* Section Wrapping */
 .section-padding-right {
@@ -315,7 +433,17 @@ h3 {
 	width: 100%;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	box-shadow: 0px 40px 30px -20px rgba(0, 0, 0, 0.5);
 	z-index: 0;
+}
+
+#primary-inquiry-model-mask {
+	position: absolute;
+	background: linear-gradient(to bottom, transparent 20%, #00000090 80%);
+	width: 100%;
+	min-width: 0;
+	height: 150px;
+	bottom: 0px;
 }
 
 #primary-inquiry-model-logo {
@@ -323,12 +451,30 @@ h3 {
 	width: 100%;
 	min-width: 0;
 	max-width: 310px;
+	max-height: 45px;
+	margin-top: auto;
 	padding: 20px;
 }
 
 #primary-inquiry-form {
 	background-color: white;
+	min-width: ;
+	height: 500px;
+	max-height: 800px;
+	min-height: 0%;
 	padding: 30px;
+}
+
+#terms-and-service {
+	line-height: 21px;
+	padding-right: 12px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 16px; 
+}
+
+#terms-and-service > input {
+	margin-right: 10px;
 }
 
 /* Desktop m-size */
